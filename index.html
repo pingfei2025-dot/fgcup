@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026第六届《富国杯》・上财基金模拟投资大赛｜赛事答疑专区</title>
+<meta name="description" content="富国杯比赛，火热进行中！">
+<meta property="og:title" content="2026第六届《富国杯》・上财基金模拟投资大赛｜赛事答疑专区">
+<meta property="og:description" content="富国杯比赛，火热进行中！">
+<meta property="og:image" content="https://fgcup-8888-d8gdhbbwg2fcef261-1345178843.tcloudbaseapp.com/%E7%B4%A0%E6%9D%90/share-600.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%232E43D9' d='M6 4h20v3h4v4c0 3.3-2.7 6-6 6h-.6A9 9 0 0 1 18 21.7V25h5v3H9v-3h5v-3.3A9 9 0 0 1 8.6 17H8c-3.3 0-6-2.7-6-6V7h4V4zm-1 6v1c0 1.7 1.3 3 3 3v-4H5zm22 0h-3v4c1.7 0 3-1.3 3-3v-1z'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #16225A;
+    --royal: #2E43D9;
+    --violet: #7C5CE6;
+    --mist: #EEF2FE;
+    --flame: #E2382A;
+    --gold: #E89B1C;
+    --paper: #FFFFFF;
+    --hair: #D9E0F2;
+    --sb: "DIN Alternate", "Bahnschrift", "Franklin Gothic Medium", "Avenir Next Condensed", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "FG QiHei", -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", sans-serif;
+    color: var(--ink); background: var(--paper);
+    font-size: 16px; line-height: 1.75;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--royal); }
+  :focus-visible { outline: 2px solid var(--royal); outline-offset: 2px; border-radius: 4px; }
+
+  /* ---------- 品牌字体（汉仪简体授权版：旗黑 45 正文 / 雅酷黑 85 标题） ---------- */
+  @font-face {
+    font-family: "FG QiHei";
+    src: url("fonts/qihei45.woff2") format("woff2"), url("fonts/qihei45.woff") format("woff");
+    font-weight: 400; font-display: swap;
+  }
+  @font-face {
+    font-family: "FG YaKuHei";
+    src: url("fonts/yakuhei85.woff2") format("woff2"), url("fonts/yakuhei85.woff") format("woff");
+    font-weight: 400; font-display: swap;
+  }
+  h2, h3, caption, .btn, .nav-brand, .faq-item summary, .legacy-title, .learn-quote, .warn b, .kv-req b, .ln b {
+    font-family: "FG YaKuHei", "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei", sans-serif;
+    font-weight: 400;
+  }
+
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 52px 0; }
+  .alt { background: var(--mist); }
+
+  h2 { font-size: 24px; font-weight: 400; line-height: 1.4; letter-spacing: .01em; }
+  .h-note { margin-top: 6px; font-size: 14px; color: #5A6699; }
+  .h-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+
+  /* ---------- 导航 ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hair);
+  }
+  .nav-in { display: flex; align-items: center; gap: 14px; height: 52px; }
+  .nav-brand { display: flex; align-items: center; gap: 8px; font-weight: 400; font-size: 15px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+  .nav-brand svg { width: 22px; height: 22px; }
+  .nav-links { display: flex; gap: 2px; margin-left: auto; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { padding: 6px 11px; font-size: 14px; color: var(--ink); text-decoration: none; border-radius: 6px; white-space: nowrap; }
+  .nav-links a:hover { background: var(--mist); color: var(--royal); }
+
+  /* ---------- 头图 ---------- */
+  .hero { position: relative; background: var(--ink); }
+  .hero img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 55% center; }
+  .hero-cta {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 40px 20px 18px;
+    background: linear-gradient(180deg, rgba(22,34,90,0) 0%, rgba(22,34,90,.78) 100%);
+    display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    animation: rise .7s ease both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .btn {
+    display: inline-block; padding: 11px 26px; border-radius: 999px;
+    font-size: 16px; font-weight: 400; text-decoration: none; border: 0; cursor: pointer;
+  }
+  .btn-main { background: linear-gradient(100deg, var(--royal), var(--violet)); color: #fff; box-shadow: 0 4px 14px rgba(46,67,217,.35); }
+  .btn-main:hover { filter: brightness(1.08); }
+  .btn-ghost { background: rgba(255,255,255,.14); color: #fff; border: 1px solid rgba(255,255,255,.65); backdrop-filter: blur(2px); }
+  .btn-ghost:hover { background: rgba(255,255,255,.26); }
+
+  /* ---------- 记分牌数据条 ---------- */
+  .stats { border-bottom: 1px solid var(--hair); }
+  .stats-in { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .stat { padding: 20px 8px; text-align: center; }
+  .stat + .stat { border-left: 1px solid var(--hair); }
+  .stat b { font-family: var(--sb); font-size: 34px; font-weight: 700; color: var(--royal); line-height: 1.1; letter-spacing: .01em; }
+  .stat b i { font-style: normal; font-size: 18px; margin-left: 2px; }
+  .stat span { display: block; font-size: 13px; color: #5A6699; margin-top: 2px; }
+  .stat:nth-child(3) b { color: var(--flame); }
+
+  /* ---------- 简介 ---------- */
+  .lead { margin-top: 16px; max-width: 46em; }
+  .tracks { margin-top: 26px; border-top: 1px solid var(--hair); }
+  .track { display: flex; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--hair); }
+  .track-bar { flex: none; width: 4px; border-radius: 2px; background: var(--royal); }
+  .track:last-child .track-bar { background: var(--flame); }
+  .track h3 { font-size: 17px; font-weight: 400; }
+  .track p { font-size: 15px; color: #3A4780; margin-top: 2px; }
+
+  /* ---------- 赛程时间轴 ---------- */
+  .timeline { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px; }
+  .tl-node { position: relative; text-align: left; padding: 0 10px 0 0; }
+  .tl-node::before {
+    content: ""; position: absolute; top: 7px; left: 0; right: 0; height: 2px; background: var(--hair);
+  }
+  .tl-node i {
+    position: relative; display: block; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--paper); border: 4px solid var(--royal); margin-bottom: 12px;
+  }
+  .tl-node:last-child i { border-color: var(--flame); }
+  .tl-node b { font-family: var(--sb); font-size: 22px; font-weight: 700; display: block; line-height: 1.2; }
+  .tl-node span { font-size: 14px; color: #5A6699; }
+  .tl-tip { margin-top: 26px; font-size: 14px; color: #3A4780; background: #fff; border-left: 3px solid var(--gold); padding: 10px 14px; border-radius: 0 8px 8px 0; }
+  .alt .tl-tip { background: #fff; }
+
+  /* ---------- 奖金表 ---------- */
+  .total-line { display: flex; align-items: baseline; gap: 10px; }
+  .total-line b { font-family: var(--sb); font-size: 44px; color: var(--gold); line-height: 1; }
+  .total-line b i { font-style: normal; font-size: 20px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 18px; background: #fff; font-size: 14px; }
+  caption { caption-side: top; text-align: left; font-weight: 400; font-size: 16px; padding: 14px 0 0; }
+  caption .cap-tag { display: inline-block; color: #fff; font-size: 13px; padding: 2px 10px; border-radius: 4px; margin-right: 8px; }
+  th, td { border: 1px solid var(--hair); padding: 8px 10px; text-align: center; }
+  th { font-weight: 700; color: #fff; }
+  td.num { font-family: var(--sb); font-size: 16px; }
+  .t-royal th { background: var(--royal); }
+  .t-flame th { background: var(--flame); }
+  tbody tr:nth-child(even) { background: #F7F9FF; }
+  td.cat-cell { font-weight: 700; background: #F0F3FE; width: 4.5em; }
+  .tbl-note { font-size: 13px; color: #5A6699; margin-top: 10px; }
+
+  /* ---------- 报名步骤 ---------- */
+  .steps { margin-top: 24px; }
+  .step { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--hair); }
+  .step-n {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--royal); color: #fff; font-family: var(--sb); font-size: 18px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step h3 { font-size: 16px; font-weight: 400; }
+  .step p { font-size: 14px; color: #3A4780; }
+  .signup-flex { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+  .signup-flex .steps { flex: 1 1 340px; }
+  .qr-block { flex: none; text-align: center; }
+  .qr-block img { width: 150px; border-radius: 10px; border: 1px solid var(--hair); margin: 0 auto; }
+  .qr-block figcaption { font-size: 13px; color: #5A6699; margin-top: 8px; }
+
+  /* ---------- 提示框 ---------- */
+  .warn {
+    margin-top: 20px; background: #FDF3F2; border-left: 4px solid var(--flame);
+    border-radius: 0 8px 8px 0; padding: 12px 16px; font-size: 14px;
+  }
+  .warn b { color: var(--flame); }
+  .kv-req { margin-top: 18px; font-size: 14px; color: #3A4780; }
+  .kv-req b { color: var(--ink); }
+
+  /* ---------- 评分公式 ---------- */
+  .formula {
+    margin-top: 24px; text-align: center; font-family: var(--sb);
+    font-size: clamp(26px, 6.4vw, 44px); font-weight: 700; color: var(--ink); line-height: 1.3;
+  }
+  .formula em { font-style: normal; color: var(--royal); }
+  .formula em.f2 { color: var(--flame); }
+  .formula em.f3 { color: var(--gold); }
+  .rule-notes { margin-top: 18px; font-size: 14px; color: #3A4780; }
+  .rule-notes li { margin: 6px 0 0 1.2em; }
+  .rank-line { margin-top: 22px; border-top: 1px solid var(--hair); padding-top: 16px; font-size: 15px; }
+  .rank-line b { font-family: var(--sb); color: var(--royal); font-weight: 700; }
+
+  /* ---------- FAQ ---------- */
+  .faq-search {
+    width: 100%; padding: 14px 18px; font-size: 16px; color: var(--ink);
+    border: 2px solid var(--royal); border-radius: 12px; background: #fff;
+  }
+  .faq-search::placeholder { color: #9AA6CE; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .chip {
+    padding: 6px 14px; border-radius: 999px; border: 1px solid var(--hair);
+    background: #fff; color: #3A4780; font-size: 14px; cursor: pointer;
+  }
+  .chip:hover { border-color: var(--royal); color: var(--royal); }
+  .chip.is-on { background: var(--royal); border-color: var(--royal); color: #fff; }
+  .faq-meta { font-size: 13px; color: #9AA6CE; margin-top: 12px; }
+  .faq-list { margin-top: 6px; }
+  .faq-item { border-bottom: 1px solid var(--hair); }
+  .faq-item summary {
+    list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px;
+    padding: 15px 2px; font-size: 16px; font-weight: 400;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-q { flex: 1; }
+  .faq-caret { flex: none; width: 9px; height: 9px; border-right: 2px solid #9AA6CE; border-bottom: 2px solid #9AA6CE; transform: rotate(45deg); transition: transform .2s; }
+  .faq-item[open] .faq-caret { transform: rotate(-135deg); }
+  .faq-a { padding: 0 2px 16px; font-size: 15px; color: #3A4780; max-width: 46em; white-space: pre-line; }
+  .faq-empty { padding: 30px 0 8px; text-align: center; color: #5A6699; font-size: 15px; }
+  .faq-empty b { font-family: var(--sb); font-size: 20px; color: var(--royal); }
+
+  /* ---------- 往届战绩 ---------- */
+  .legacy { margin-top: 28px; border-top: 1px solid var(--hair); padding-top: 20px; }
+  .legacy-title { font-size: 15px; font-weight: 400; }
+  .legacy-in { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 12px; }
+  .legacy .lg { padding: 4px 12px 4px 0; }
+  .legacy .lg + .lg { border-left: 1px solid var(--hair); padding-left: 16px; }
+  .legacy .lg b { font-family: var(--sb); font-size: 26px; font-weight: 700; color: var(--royal); line-height: 1.15; }
+  .legacy .lg b i { font-style: normal; font-size: 14px; }
+  .legacy .lg span { display: block; font-size: 13px; color: #5A6699; }
+  .legacy-note { margin-top: 12px; font-size: 13px; color: #5A6699; }
+
+  /* ---------- 投资小课堂 ---------- */
+  .learn-quote { margin-top: 20px; background: var(--mist); border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 16px 20px; font-size: 17px; font-weight: 400; line-height: 1.6; }
+  .learn-quote cite { display: block; font-style: normal; font-weight: 400; font-size: 13px; color: #5A6699; margin-top: 8px; }
+  .learn-h { margin-top: 34px; font-size: 18px; font-weight: 400; }
+  .lh-tag { display: inline-block; font-size: 13px; color: #fff; background: var(--flame); border-radius: 4px; padding: 1px 9px; margin-right: 8px; vertical-align: 3px; }
+  .learn-h.eq .lh-tag { background: var(--royal); }
+  .learn-list { margin-top: 6px; }
+  .ln { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--hair); }
+  .learn-list .ln:last-child { border-bottom: 0; }
+  .ln-n { flex: none; width: 26px; height: 26px; margin-top: 3px; border-radius: 7px; background: #FDEEEC; color: var(--flame); font-family: var(--sb); font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .ln-n.eq { background: #DFE7FB; color: var(--royal); }
+  .ln b { font-size: 15.5px; }
+  .ln p { font-size: 14.5px; color: #3A4780; margin-top: 2px; }
+  .ln .lh-how { font-size: 13px; color: #8791BD; margin-top: 3px; }
+  .learn-more { margin-top: 20px; font-size: 14px; color: #5A6699; }
+
+  /* ---------- 网页提问 ---------- */
+  .ask-row { margin-top: 18px; text-align: center; }
+  .ask-open { background: #fff; border: 2px solid var(--royal); color: var(--royal); border-radius: 999px; padding: 10px 24px; font-size: 15px; cursor: pointer; }
+  .ask-open:hover { background: var(--royal); color: #fff; }
+  .ask-mask { position: fixed; inset: 0; background: rgba(22,34,90,.55); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .ask-mask[hidden] { display: none; }
+  .ask-card { position: relative; background: #fff; border-radius: 14px; width: 100%; max-width: 520px; padding: 24px 22px 20px; max-height: 85vh; overflow: auto; }
+  .ask-card h3 { font-size: 19px; }
+  .ask-x { position: absolute; top: 8px; right: 12px; background: none; border: 0; font-size: 26px; line-height: 1; color: #9AA6CE; cursor: pointer; }
+  .ask-note { font-size: 13px; color: #5A6699; margin-top: 6px; }
+  .ask-card textarea { width: 100%; margin-top: 14px; padding: 12px 14px; font-size: 15px; color: var(--ink); border: 2px solid var(--royal); border-radius: 10px; resize: vertical; font-family: inherit; }
+  .ask-actions { margin-top: 14px; text-align: right; }
+  .ask-actions .btn { padding: 9px 22px; font-size: 15px; }
+  .ask-sug { margin-top: 14px; background: var(--mist); border-left: 4px solid var(--royal); border-radius: 0 10px 10px 0; padding: 14px 16px; }
+  .ask-sug b { display: block; font-size: 15px; }
+  .ask-sug p { font-size: 14px; color: #3A4780; margin-top: 6px; white-space: pre-line; }
+  .ask-sug-btns { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .ask-sug-btns .btn { padding: 8px 18px; font-size: 14px; }
+  .ask-btn-ghost { background: #fff; color: var(--royal); border: 1px solid var(--royal); }
+  .ask-done { margin-top: 14px; background: #EDF7F0; border-left: 4px solid #2FA36B; border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; color: #1E6B45; }
+  .ask-err { margin-top: 10px; font-size: 13px; color: var(--flame); }
+
+  /* ---------- 咨询 ---------- */
+  .qr-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 24px; }
+  .qr-cell { text-align: center; background: #fff; border: 1px solid var(--hair); border-radius: 12px; padding: 14px 8px; }
+  .qr-cell img { width: 100%; max-width: 150px; margin: 0 auto; border-radius: 8px; }
+  .qr-cell figcaption { font-size: 13px; color: #3A4780; margin-top: 8px; line-height: 1.5; }
+  .phone-line {
+    margin-top: 22px; background: var(--ink); color: #fff; border-radius: 12px;
+    padding: 14px 18px; display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;
+  }
+  .phone-line b { font-family: var(--sb); font-size: 24px; letter-spacing: .03em; }
+  .phone-line span { font-size: 13px; color: #B9C4EE; }
+  .ext-links { margin-top: 18px; font-size: 13px; color: #5A6699; }
+  .ext-links a { color: var(--royal); text-decoration: none; border-bottom: 1px dashed var(--hair); }
+
+  /* ---------- 页脚 ---------- */
+  footer { background: var(--ink); color: #B9C4EE; padding: 34px 0 30px; font-size: 13px; line-height: 1.9; }
+  footer .wrap p + p { margin-top: 6px; }
+  footer a { color: #8FA0E8; }
+  .foot-host { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 12px; }
+  .foot-legal { border-top: 1px solid rgba(255,255,255,.14); padding-top: 14px; max-width: 860px; }
+  .foot-legal b { color: #DDE5FF; font-weight: 700; }
+
+  @media (min-width: 720px) {
+    section { padding: 68px 0; }
+    h2 { font-size: 28px; }
+    .hero img { aspect-ratio: 21 / 9; }
+    .stat b { font-size: 42px; }
+    .wrap { padding: 0 28px; }
+  }
+  @media (max-width: 420px) {
+    .tl-node b { font-size: 18px; }
+    .stat b { font-size: 28px; }
+    .formula { font-size: 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 转发卡片缩略图：置于页首供微信等客户端抓取（对视觉隐藏） -->
+<img src="素材/share-600.jpg" alt="" width="300" height="300" aria-hidden="true" style="position:absolute;left:-9999px;top:0;width:300px;height:300px;opacity:0;pointer-events:none;">
+
+<nav class="nav" aria-label="页面导航">
+  <div class="wrap nav-in">
+    <a class="nav-brand" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#2E43D9" d="M6 4h20v3h4v4c0 3.3-2.7 6-6 6h-.6A9 9 0 0 1 18 21.7V25h5v3H9v-3h5v-3.3A9 9 0 0 1 8.6 17H8c-3.3 0-6-2.7-6-6V7h4V4zm-1 6v1c0 1.7 1.3 3 3 3v-4H5zm22 0h-3v4c1.7 0 3-1.3 3-3v-1z"/></svg>
+      富国杯 · 官方答疑
+    </a>
+    <div class="nav-links">
+      <a href="#faq">答疑</a>
+      <a href="#schedule">赛程</a>
+      <a href="#awards">奖金</a>
+      <a href="#signup">报名</a>
+      <a href="#rules">规则</a>
+      <a href="#learn">小课堂</a>
+      <a href="#contact">咨询</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img src="素材/kv-main.jpg" alt="第六届“富国杯”上财基金模拟投资大赛主视觉：少年胸怀财略 赛场驰骋风云">
+  <div class="hero-cta">
+    <a class="btn btn-main" href="#signup">去报名</a>
+    <a class="btn btn-ghost" href="#faq">常见问题</a>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap stats-in">
+    <div class="stat"><b>15.4<i>万元</i></b><span>总奖金池</span></div>
+    <div class="stat"><b>20<i>万元</i></b><span>虚拟资金</span></div>
+    <div class="stat"><b>2<i>大赛道</i></b><span>模拟投资 + 视频创作</span></div>
+  </div>
+</div>
+
+<section id="intro">
+  <div class="wrap">
+    <h2>比赛简介</h2>
+    <p class="lead">在中国证券投资基金业协会“一司一省一高校”投资者教育活动倡议下，富国基金联合上海财经大学举办 2026—2027 年第六届“富国杯”上财基金模拟投资大赛，2026 年 10 月 19 日正式启幕，以赛促学。</p>
+    <div class="tracks">
+      <div class="track">
+        <div class="track-bar" aria-hidden="true"></div>
+        <div>
+          <h3>基金模拟投资赛</h3>
+          <p>报名成功即得 20 万元虚拟资金，投资富国基金旗下场外基金，角逐“收益奖”。</p>
+        </div>
+      </div>
+      <div class="track">
+        <div class="track-bar" aria-hidden="true"></div>
+        <div>
+          <h3>财经视频创作赛</h3>
+          <p>在小红书发布原创笔记（视频、图文、海报等），围绕比赛分享投资策略与心得，竞逐“财经视频奖”。</p>
+        </div>
+      </div>
+    </div>
+    <div class="legacy">
+      <p class="legacy-title">赛事传承 · 已连续举办五届</p>
+      <div class="legacy-in">
+        <div class="lg"><b>7800<i>+</i></b><span>累计参赛学子</span></div>
+        <div class="lg"><b>75<i>万元+</i></b><span>累计发放奖金</span></div>
+        <div class="lg"><b>83.27<i>%</i></b><span>第五届特等奖收益率</span></div>
+      </div>
+      <p class="legacy-note">第五届大赛 1143 位选手参赛，近七成实现正收益，61 名收益奖获奖选手平均收益率 43.31%。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>常见问题</h2>
+      <span class="faq-meta" id="faq-count"></span>
+    </div>
+    <input class="faq-search" id="faq-search" type="search" placeholder="输入关键词，如：报名 / 小红书号 / 打分 / 奖金" aria-label="搜索常见问题">
+    <div class="chips" id="faq-cats" role="group" aria-label="按分类筛选"></div>
+    <div class="faq-list" id="faq-list"></div>
+    <div class="faq-empty" id="faq-empty" hidden>
+      没有找到相关问题。<br>可于 <span class="faq-empty-phone"></span>（<span class="faq-empty-hours"></span>）来电咨询，或拉到页面底部扫码进群。
+    </div>
+    <div class="ask-row"><button class="ask-open" id="ask-open" type="button">没找到答案？<b>我要提问</b></button></div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>赛程安排</h2>
+      <span class="h-note">2026 年 10 月 — 2027 年 4 月</span>
+    </div>
+    <div class="timeline">
+      <div class="tl-node"><i aria-hidden="true"></i><b>2026.10.19</b><span>大赛正式启幕</span></div>
+      <div class="tl-node"><i aria-hidden="true"></i><b>2027.01.15</b><span>半程赛截止</span></div>
+      <div class="tl-node"><i aria-hidden="true"></i><b>2027.04.30</b><span>比赛结束</span></div>
+    </div>
+    <p class="tl-tip">半程截止日（2027 年 1 月 15 日）前可申请注销账户、保留当前收益成绩，但丧失全程奖参评资格；注销后不可重新参赛。</p>
+  </div>
+</section>
+
+<section id="awards" class="alt">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>奖金设置</h2>
+      <span class="total-line"><b>15.4<i>万元</i></b><span class="h-note">总奖金池</span></span>
+    </div>
+
+    <table class="t-royal">
+      <caption><span class="cap-tag" style="background:var(--royal)">收益奖</span>半程奖 + 全程奖</caption>
+      <thead>
+        <tr><th scope="col">类别</th><th scope="col">奖项</th><th scope="col">奖金（元）</th><th scope="col">人数（人）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="cat-cell" rowspan="5">半程奖</td><td>特等奖</td><td class="num">3000</td><td class="num">1</td></tr>
+        <tr><td>一等奖</td><td class="num">2000</td><td class="num">2</td></tr>
+        <tr><td>二等奖</td><td class="num">1000</td><td class="num">8</td></tr>
+        <tr><td>三等奖</td><td class="num">800</td><td class="num">20</td></tr>
+        <tr><td>优胜奖</td><td class="num">500</td><td class="num">30</td></tr>
+        <tr><td class="cat-cell" rowspan="5">全程奖</td><td>特等奖</td><td class="num">10000</td><td class="num">1</td></tr>
+        <tr><td>一等奖</td><td class="num">5000</td><td class="num">2</td></tr>
+        <tr><td>二等奖</td><td class="num">2000</td><td class="num">8</td></tr>
+        <tr><td>三等奖</td><td class="num">1000</td><td class="num">20</td></tr>
+        <tr><td>优胜奖</td><td class="num">800</td><td class="num">30</td></tr>
+      </tbody>
+    </table>
+
+    <table class="t-flame">
+      <caption><span class="cap-tag" style="background:var(--flame)">财经视频奖</span>全程奖</caption>
+      <thead>
+        <tr><th scope="col">奖项</th><th scope="col">奖金（元）</th><th scope="col">人数（人）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>特等奖</td><td class="num">5000</td><td class="num">1</td></tr>
+        <tr><td>一等奖</td><td class="num">3000</td><td class="num">2</td></tr>
+        <tr><td>二等奖</td><td class="num">1000</td><td class="num">5</td></tr>
+        <tr><td>三等奖</td><td class="num">800</td><td class="num">15</td></tr>
+      </tbody>
+    </table>
+
+    <p class="tbl-note">半程奖合计 4.6 万元；收益全程奖合计 8.0 万元；财经视频奖合计 2.8 万元。获奖名单于全程赛结束后通过官方渠道公布，奖金由上海财经大学财务统一发放。</p>
+  </div>
+</section>
+
+<section id="signup">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>报名方式</h2>
+      <span class="h-note">仅限上海财经大学在校学生参赛</span>
+    </div>
+    <div class="signup-flex">
+      <div class="steps">
+        <div class="step">
+          <span class="step-n" aria-hidden="true">1</span>
+          <div><h3>下载“富国富钱包”APP</h3><p>在应用商店搜索“富国富钱包”，或扫描右侧二维码下载。</p></div>
+        </div>
+        <div class="step">
+          <span class="step-n" aria-hidden="true">2</span>
+          <div><h3>点击首页大赛 Banner</h3><p>打开 APP 首页，找到“富国杯”基金模拟投资大赛 Banner，点击“参赛”进入。</p></div>
+        </div>
+        <div class="step">
+          <span class="step-n" aria-hidden="true">3</span>
+          <div><h3>完成注册</h3><p>必填学校名称、院系名称、手机号码、学号；选填小红书号。报名成功即得 20 万元虚拟资金。</p></div>
+        </div>
+      </div>
+      <figure class="qr-block">
+        <img src="素材/qr-app-v2.jpg" alt="富国富钱包 APP 下载二维码">
+        <figcaption>扫码下载“富国富钱包”APP</figcaption>
+      </figure>
+    </div>
+
+    <div class="kv-req">
+      <b>小红书号（选填）：</b>填写个人主页 ID 即可报名财经视频创作赛，留空视为不参加视频赛。<b>查询路径：</b>小红书 APP →【我】→ 右上角【···】→【账号与安全】。
+    </div>
+    <div class="warn">
+      <b>注意：</b>参加财经视频创作赛，小红书号绑定的手机号必须与报名手机号完全一致；获奖将通过手机号及小红书账号核验身份。
+    </div>
+  </div>
+</section>
+
+<section id="rules" class="alt">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>评选规则</h2>
+      <span class="h-note">财经视频创作赛</span>
+    </div>
+    <p class="formula">点赞 <em>×1</em> ＋ 评论 <em class="f2">×3</em> ＋ 收藏 <em class="f3">×2</em></p>
+    <ul class="rule-notes">
+      <li>仅统计其他用户的有效评论，本人评论、水评、复制粘贴评论不计入。</li>
+      <li>按总分从高到低确定名次，数据异常由组委会裁定。</li>
+      <li>发布需带 #富国杯 话题、@富国基金 并关注官方账号，多条合格内容合并统计。</li>
+    </ul>
+    <p class="rank-line"><b>模拟投资排名：</b>截止日对账户总资产倒序排名，账户总资产 ＝ 持仓市值 ＋ 可用金额 ＋ 在途资产；总资产相同时按注册时间先后排序。比赛期间至少完成一次申购或赎回，否则视为自动放弃参赛资格。</p>
+  </div>
+</section>
+
+<section id="learn">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>投资小课堂</h2>
+      <span class="h-note">内容取自大赛官方科普《星际航行手册》</span>
+    </div>
+    <div class="learn-quote">
+      “真正拉开差距的，从来不是谁预测得更准，而是谁更少犯错。”
+      <cite>—— 大赛官方科普《星际航行手册》</cite>
+    </div>
+    <h3 class="learn-h"><span class="lh-tag">先避坑</span>新手最高频的 3 个高危动作</h3>
+    <div class="learn-list">
+      <div class="ln"><span class="ln-n" aria-hidden="true">1</span><div><b>追涨杀跌、跟风扎堆</b><p>哪里热闹往哪扎堆，常常高位接手、风一反向又慌忙离场。</p></div></div>
+      <div class="ln"><span class="ln-n" aria-hidden="true">2</span><div><b>押注单一板块（集中度风险）</b><p>把全部资金押在一颗“星球”上：顺风时一骑绝尘，一旦进入漫长寒冬，整个账户一起停摆。</p></div></div>
+      <div class="ln"><span class="ln-n" aria-hidden="true">3</span><div><b>频繁交易、过度自信</b><p>听到信号就申赎、看到波动就调仓。交易越勤，平均回报往往越差。</p></div></div>
+    </div>
+    <h3 class="learn-h eq"><span class="lh-tag">再装备</span>领航员的 3 件航行装备</h3>
+    <div class="learn-list">
+      <div class="ln"><span class="ln-n eq" aria-hidden="true">1</span><div><b>资产配置 · 多引擎燃料分舱</b><p>把资金分配进股票、债券、现金等不同类型资产，多引擎并行、平衡动力与安全。</p><p class="lh-how">主要应对：市场风险、行业集中、波动回撤。</p></div></div>
+      <div class="ln"><span class="ln-n eq" aria-hidden="true">2</span><div><b>止损策略 · 逃逸塔紧急返航</b><p>预设安全红线，触线果断调整。止损不是认输，而是保留“再次启航”的资格。</p><p class="lh-how">主要应对：市场风险、信用踩雷、超出承受力的深坑回撤。</p></div></div>
+      <div class="ln"><span class="ln-n eq" aria-hidden="true">3</span><div><b>定投法则 · 太阳能自动补给</b><p>固定周期自动买入，高位少买、低位多买，平滑成本，关掉“追涨杀跌”的情绪开关。</p><p class="lh-how">主要应对：追涨杀跌、择时焦虑、日常波动。</p></div></div>
+    </div>
+    <p class="learn-more">更多基础问题见下方 <a href="#faq">常见问题</a>，也可直接搜索，如“定投”“止损”。</p>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="h-row">
+      <h2>咨询方式</h2>
+      <span class="h-note">扫码进群，随时答疑</span>
+    </div>
+    <div class="qr-row">
+      <figure class="qr-cell">
+        <img src="素材/qr-app-v2.jpg" alt="富国富钱包 APP 下载二维码">
+        <figcaption>富国富钱包 APP</figcaption>
+      </figure>
+      <figure class="qr-cell">
+        <img src="素材/qr-wechat-v2.png" alt="微信比赛咨询群二维码">
+        <figcaption>微信比赛咨询群</figcaption>
+      </figure>
+      <figure class="qr-cell">
+        <img src="素材/qr-qq-v2.jpg" alt="QQ 沟通群二维码">
+        <figcaption>QQ 沟通群</figcaption>
+      </figure>
+    </div>
+    <div class="phone-line">
+      <span>赛事咨询热线</span><b>021-20513240</b><span>工作日 9:00–17:30</span>
+    </div>
+    <p class="ext-links">官方推文：<a href="https://mp.weixin.qq.com/s/O5SJLhwG_5ilIhSHvQip5A" target="_blank" rel="noopener">新赛季发车篇</a> · <a href="https://mp.weixin.qq.com/s/tqSzsuj35UxFhLYEjHYNwA" target="_blank" rel="noopener">收益率图鉴篇</a> · <a href="https://mp.weixin.qq.com/s/GXgnFEnRost9vph22Zx8fA" target="_blank" rel="noopener">星际航行手册（投资科普）</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="foot-host">主办单位：富国基金管理有限公司 × 上海财经大学</p>
+    <div class="foot-legal">
+      <p><b>风险提示：</b>基金有风险，投资需谨慎。本次大赛为模拟投资，不构成真实投资建议。本页为"富国杯"赛事说明，仅供参赛者参考。</p>
+      <p><b>诚信承诺：</b>本次大赛遵循"诚实信用、公平公正"原则，严禁冒名顶替、一人多账号等行为，一经发现违规，主办方有权取消参赛资格。</p>
+      <p><b>赛事咨询：</b>如有疑问，可于工作日 9:00–17:30 致电大赛事务组 021-20513240。</p>
+      <p>本次大赛的最终解释权归富国基金管理有限公司所有。</p>
+    </div>
+    <p><a href="admin.html">工作人员入口</a></p>
+  </div>
+</footer>
+
+<div class="ask-mask" id="ask-mask" hidden>
+  <div class="ask-card" role="dialog" aria-modal="true" aria-labelledby="ask-title">
+    <button class="ask-x" id="ask-close" type="button" aria-label="关闭">×</button>
+    <h3 id="ask-title">我要提问</h3>
+    <p class="ask-note">匿名提交，不采集姓名和手机号；工作日也可致电 <span class="ask-phone"></span>（<span class="ask-hours"></span>）。</p>
+    <textarea id="ask-text" rows="4" maxlength="500" placeholder="请描述你遇到的问题，如：小红书号在哪里查询？"></textarea>
+    <div class="ask-actions"><button class="btn btn-main" id="ask-submit" type="button">提交问题</button></div>
+    <div id="ask-result" hidden></div>
+  </div>
+</div>
+
+<script src="js/faq-data.js"></script>
+<script src="js/app-config.js"></script>
+<script src="js/public.js"></script>
+</body>
+</html>
